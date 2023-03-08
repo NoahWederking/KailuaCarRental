@@ -10,6 +10,8 @@ public class Main {
     public java.sql.Connection con;
     private boolean isRunning;
 
+    //Hej
+
     // Instances
     Scanner scanner = new Scanner(System.in);
     Menu menu = new Menu("Kailua Car Rental", "Please choose: ", new String[]{"1. Cars",
