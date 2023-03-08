@@ -48,12 +48,12 @@ customer_licencedate	DATE												NOT NULL
 CREATE TABLE contract
 (
 contract_id			INT						AUTO_INCREMENT				UNIQUE NOT NULL,			
-customer_licence		INT											UNIQUE NOT NULL,
+customer_licence_number		INT											UNIQUE NOT NULL,
 contract_date_from		DATE											NOT NULL,
 contract_date_to		DATE											NOT NULL,
 contract_max_km			INT											NOT NULL,
 contract_km_driven		INT											NOT NULL,
 car_plate			VARCHAR(8)										NOT NULL, 
 															FOREIGN KEY(car_plate) REFERENCES cars(car_plate), 
-                                                                      							FOREIGN KEY(customer_licence) REFERENCES customer(customer_licence)
+                                                                      							FOREIGN KEY(customer_licence_number) REFERENCES customer(customer_licence_number)
 );
