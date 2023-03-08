@@ -1,4 +1,4 @@
-INSERT INTO customer (customer_fullname, customer_address, customer_zip, customer_city, customer_phone, customer_mobile, customer_email, customer_licence, customer_licencedate)
+INSERT INTO customer (customer_fullname, customer_address, customer_zip, customer_city, customer_phone, customer_mobile, customer_email, customer_licence_number, customer_licencedate)
 VALUES
 ('John Smith', '123 Main St', '12345', 'Anytown', '555-1234', '555-5678', 'john.smith@example.com', 123456, '2020-01-01'),
 ('Jane Doe', '456 Oak St', '67890', 'Othertown', '555-5678', '555-9012', 'jane.doe@example.com', 234567, '2019-12-31'),
