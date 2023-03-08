@@ -28,7 +28,7 @@ car_fueltype			ENUM('Diesel', 'Benzin', 'Hybrid', 'Electric')						NOT NULL,
 car_plate			VARCHAR(8)										PRIMARY KEY NOT NULL UNIQUE,
 car_registration		DATE											NOT NULL,
 car_miles			INT											NOT NULL,
-															FOREIGN KEY(car_id) REFERENCES rental(car_id)
+															FOREIGN KEY(car_id) REFERENCES car_type(car_id)
 );
 
 CREATE TABLE customer
