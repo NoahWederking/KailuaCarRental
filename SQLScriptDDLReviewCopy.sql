@@ -1,4 +1,4 @@
- 
+CREATE SCHEMA carrental;
 USE carrental;
 
 DROP TABLE IF EXISTS rental;
