@@ -1,5 +1,5 @@
  
-USE carrental1;
+USE carrental;
 
 DROP TABLE IF EXISTS rental;
 DROP TABLE IF EXISTS cars;
