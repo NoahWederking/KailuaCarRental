@@ -27,7 +27,7 @@ INSERT INTO accessorie (car_id, car_geartype, car_aircondition, car_cruisecontro
 (10, 'Manuel', 1, 1, 1, 5, 150);
 
 
-INSERT INTO cars (car_id, car_brand, car_model, car_fueltype, car_plate, car_registration, car_miles, car_isrented)
+INSERT INTO car (car_id, car_brand,  car_fueltype, car_plate, car_registration, car_miles, car_isrented)
 VALUES
   (1, 'Toyota', 'Benzin', 'ABC1234', '2022-01-01', 10000, 0),
   (2, 'Honda', 'Benzin', 'DEF5678', '2022-01-02', 15000, 1),
