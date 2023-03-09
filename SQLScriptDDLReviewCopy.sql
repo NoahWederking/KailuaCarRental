@@ -7,10 +7,9 @@ DROP TABLE IF EXISTS customer;
 DROP TABLE IF EXISTS contract;
 
 
-CREATE TABLE car_type
+CREATE TABLE accessorie 
 (
 car_id				INT											PRIMARY KEY UNIQUE NOT NULL,
-car_ccm				DOUBLE											NOT NULL,
 car_geartype			ENUM('Automatic', 'Manuel')								NOT NULL,
 car_aircondition		BOOLEAN											NOT NULL,
 car_cruisecontrol		BOOLEAN											NOT NULL,
@@ -19,16 +18,22 @@ car_carseats			INT											NOT NULL,
 car_horsepower			INT											NOT NULL
 );
 
-CREATE TABLE cars
+CREATE TABLE car
 (
 car_id				INT											UNIQUE NOT NULL,
 car_brand			VARCHAR(20)										NOT NULL,
-car_model			VARCHAR(30)										NOT NULL,
 car_fueltype			ENUM('Diesel', 'Benzin', 'Hybrid', 'Electric')						NOT NULL,
 car_plate			VARCHAR(8)										PRIMARY KEY NOT NULL UNIQUE,
 car_registration		DATE											NOT NULL,
 car_miles			INT											NOT NULL,
-															FOREIGN KEY(car_id) REFERENCES car_type(car_id)
+															FOREIGN KEY(car_id) REFERENCES accessorie(car_id)
+);
+
+CREATE TABLE model
+(
+car_model			VARCHAR(20)										NOT NULL,
+car_id				INT 											UNIQUE NOT NULL,
+															FOREIGN KEY (car_id) REFERENCES accessorie(car_id)
 );
 
 CREATE TABLE customer
@@ -36,13 +41,12 @@ CREATE TABLE customer
 customer_id			INT						AUTO_INCREMENT			UNIQUE 	NOT NULL,
 customer_fullname		VARCHAR(30)										NOT NULL,
 customer_address		VARCHAR(30)										NOT NULL,
-customer_zip			VARCHAR(6)										NOT NULL,
 customer_city			VARCHAR(30)										NOT NULL,
 customer_phone			VARCHAR(30),										
 customer_mobile			VARCHAR(30)										NOT NULL,
 customer_email			VARCHAR(30)										NOT NULL,
 customer_licence_number		INT											PRIMARY KEY UNIQUE NOT NULL,
-customer_licencedate	DATE												NOT NULL
+customer_licencedate		DATE											NOT NULL
 );
 
 CREATE TABLE contract
