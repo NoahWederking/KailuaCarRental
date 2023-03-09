@@ -12,8 +12,6 @@ VALUES
 ('Lisa Park', '987 Elm St', 'Bigcity', '555-2345', '555-6789', 'lisa.park@example.com', 123789, '2020-07-01');
 
 
-
-
 INSERT INTO accessorie (car_id, car_geartype, car_aircondition, car_cruisecontrol, car_leatherseats, car_carseats, car_horsepower) VALUES
 (1, 'Automatic', 1, 1, 1, 5, 120),
 (2, 'Manuel', 1, 0, 0, 5, 150),
@@ -27,7 +25,7 @@ INSERT INTO accessorie (car_id, car_geartype, car_aircondition, car_cruisecontro
 (10, 'Manuel', 1, 1, 1, 5, 150);
 
 
-INSERT INTO car (car_id, car_brand,  car_fueltype, car_plate, car_registration, car_miles, car_isrented)
+INSERT INTO car (car_id, car_brand, car_fueltype, car_plate, car_registration, car_miles, car_isrented)
 VALUES
   (1, 'Toyota', 'Benzin', 'ABC1234', '2022-01-01', 10000, 0),
   (2, 'Honda', 'Benzin', 'DEF5678', '2022-01-02', 15000, 1),
@@ -36,9 +34,10 @@ VALUES
   (5, 'BMW', 'Diesel', 'MNO7890', '2022-01-05', 8000, 0),
   (6, 'Mercedes-Benz', 'Diesel', 'PQR1234', '2022-01-06', 12000, 0),
   (7, 'Volkswagen', 'Hybrid', 'STU5678', '2022-01-07', 1000, 0),
-  (8, 'Audi', 'A4', 'Diesel', 'VWX9012', '2022-01-08', 3000, 1),
+  (8, 'Audi', 'Diesel', 'VWX9012', '2022-01-08', 3000, 1),
   (9, 'Chevrolet', 'Benzin', 'YZA3456', '2022-01-09', 18000, 0),
   (10, 'Hyundai', 'Benzin', 'BCD7890', '2022-01-10', 7000, 0);
+  
   
   INSERT INTO model(car_id, car_model)
   VALUES
