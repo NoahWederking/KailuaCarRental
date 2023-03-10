@@ -16,7 +16,8 @@ car_aircondition		BOOLEAN												NOT NULL,
 car_cruisecontrol		BOOLEAN												NOT NULL,
 car_leatherseats		BOOLEAN												NOT NULL,
 car_carseats			INT													NOT NULL,
-car_horsepower			INT													NOT NULL
+car_horsepower			INT													NOT NULL,
+car_type			ENUM('Luxury', 'Sport', 'Family'),
 );
 
 CREATE TABLE car
@@ -27,9 +28,8 @@ car_fueltype			ENUM('Diesel', 'Benzin', 'Hybrid', 'Electric')		NOT NULL,
 car_plate				VARCHAR(8)											PRIMARY KEY NOT NULL UNIQUE,
 car_registration		DATE												NOT NULL,
 car_miles				INT													NOT NULL,
-car_isrented			BOOLEAN												NOT NULL,
-car_type				ENUM('Luxury', 'Sport', 'Family'),					
-																			FOREIGN KEY(car_id) REFERENCES accessorie(car_id)
+car_isrented			BOOLEAN												NOT NULL,					
+																FOREIGN KEY(car_id) REFERENCES accessorie(car_id)
 );
 
 CREATE TABLE model
