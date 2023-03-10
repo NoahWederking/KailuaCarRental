@@ -12,17 +12,18 @@ VALUES
 ('Lisa Park', '987 Elm St', 'Bigcity', '555-2345', '555-6789', 'lisa.park@example.com', 123789, '2020-07-01');
 
 
-INSERT INTO accessorie (car_id, car_geartype, car_aircondition, car_cruisecontrol, car_leatherseats, car_carseats, car_horsepower) VALUES
-(1, 'Automatic', 1, 1, 1, 5, 120),
-(2, 'Manuel', 1, 1, 0, 5, 200),
-(3, 'Automatic', 1, 1, 1, 7, 180),
-(4, 'Manuel', 0, 0, 0, 4, 90),
-(5, 'Automatic', 1, 1, 1, 5, 140),
-(6, 'Manuel', 1, 1, 0, 5, 110),
-(7, 'Automatic', 1, 1, 1, 5, 170),
-(8, 'Manuel', 1, 1, 1, 5, 250),
-(9, 'Automatic', 0, 1, 0, 5, 130),
-(10, 'Manuel', 1, 1, 1, 5, 150);
+INSERT INTO accessorie (car_geartype, car_aircondition, car_cruisecontrol, car_leatherseats, car_carseats, car_horsepower, car_type) 
+VALUES 
+    ('Automatic', true, true, false, 5, 150, 'Sport'),
+    ('Manuel', true, false, true, 4, 120, 'Family'),
+    ('Automatic', true, true, true, 7, 220, 'Luxury'),
+    ('Manuel', false, false, false, 5, 90, 'Family'),
+    ('Automatic', false, true, true, 5, 180, 'Sport'),
+    ('Manuel', true, false, false, 2, 110, 'Family'),
+    ('Automatic', true, false, true, 4, 130, 'Sport'),
+    ('Manuel', true, true, false, 7, 200, 'Luxury'),
+    ('Automatic', false, false, false, 5, 120, 'Family'),
+    ('Manuel', true, true, true, 5, 170, 'Sport')
 
 
 INSERT INTO car (car_id, car_brand, car_fueltype, car_plate, car_registration, car_miles, car_isrented, car_type)
