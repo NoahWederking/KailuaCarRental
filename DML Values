@@ -54,6 +54,6 @@ VALUES
   
   INSERT INTO contract(contract_id, customer_licence_number, contract_date_from, contract_date_to, contract_max_km, contract_km_driven, car_plate)
   VALUES
-  (1, 234567, '2023-05-03', '2023-05-05', 5000, 15000, 'DEF5678'),
-  (2, 456789, '2023-10-02', '2023-10-03', 3000, 20000, 'JKL3456'),
-  (3, 890123, '2023-01-01', '2023-01-02', 750, 3000, 'VWX9012');
+  (NULL, 234567, '2023-05-03', '2023-05-05', 5000, 15000, 'DEF5678'),
+  (NULL, 456789, '2023-10-02', '2023-10-03', 3000, 20000, 'JKL3456'),
+  (NULL, 890123, '2023-01-01', '2023-01-02', 750, 3000, 'VWX9012');
