@@ -14,16 +14,16 @@ VALUES
 
 INSERT INTO accessorie (car_geartype, car_aircondition, car_cruisecontrol, car_leatherseats, car_carseats, car_horsepower, car_type) 
 VALUES 
-    ('Automatic', true, true, false, 5, 150, 'Sport'),
-    ('Manuel', true, false, true, 4, 120, 'Family'),
-    ('Automatic', true, true, true, 7, 220, 'Luxury'),
-    ('Manuel', false, false, false, 5, 90, 'Family'),
-    ('Automatic', false, true, true, 5, 180, 'Sport'),
-    ('Manuel', true, false, false, 2, 110, 'Family'),
-    ('Automatic', true, false, true, 4, 130, 'Sport'),
-    ('Manuel', true, true, false, 7, 200, 'Luxury'),
-    ('Automatic', false, false, false, 5, 120, 'Family'),
-    ('Manuel', true, true, true, 5, 170, 'Sport')
+    ('Automatic', 1, 1, 0, 5, 150, 'Sport'),
+    ('Manuel', 1, 0, 1, 4, 120, 'Family'),
+    ('Automatic', 1, 1, 1, 7, 220, 'Luxury'),
+    ('Manuel', 0, 0, 0, 5, 90, 'Family'),
+    ('Automatic', 0, 1, 1, 5, 180, 'Sport'),
+    ('Manuel', 1, 0, 0, 2, 110, 'Family'),
+    ('Automatic', 1, 0, 1, 4, 130, 'Sport'),
+    ('Manuel', 1, 1, 0, 7, 200, 'Luxury'),
+    ('Automatic', 0, 0, 0, 5, 120, 'Family'),
+    ('Manuel', 1, 1, 1, 5, 170, 'Sport');
 
 
 INSERT INTO car (car_brand, car_fueltype, car_plate, car_registration, car_miles, car_isrented) 
