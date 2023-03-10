@@ -17,7 +17,7 @@ car_cruisecontrol		BOOLEAN												NOT NULL,
 car_leatherseats		BOOLEAN												NOT NULL,
 car_carseats			INT													NOT NULL,
 car_horsepower			INT													NOT NULL,
-car_type			ENUM('Luxury', 'Sport', 'Family'),
+car_type			ENUM('Luxury', 'Sport', 'Family')
 );
 
 CREATE TABLE car
