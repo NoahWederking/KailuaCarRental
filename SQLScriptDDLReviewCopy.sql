@@ -50,7 +50,7 @@ customer_phone			VARCHAR(30),
 customer_mobile			VARCHAR(30)										NOT NULL,
 customer_email			VARCHAR(30)										NOT NULL,
 customer_licence_number	INT												PRIMARY KEY UNIQUE NOT NULL,
-customer_licence_date	DATE											NOT NULL
+customer_licence_date	DATE											        NOT NULL
 );
 
 CREATE TABLE contract
