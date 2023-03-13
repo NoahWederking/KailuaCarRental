@@ -16,12 +16,12 @@ INSERT INTO accessorie (car_id, car_geartype, car_aircondition, car_cruisecontro
 (1, 'Automatic', 1, 1, 1, 5, 120, 'Luxury'),
 (2, 'Manuel', 1, 1, 0, 5, 200, 'Sport'),
 (3, 'Automatic', 1, 1, 1, 7, 180, 'Family'),
-(4, 'Manuel', 0, 0, 0, 4, 90, null),
+(4, 'Manuel', 0, 0, 0, 4, 90, 'Unknown'),
 (5, 'Automatic', 1, 1, 1, 5, 140, 'Luxury'),
-(6, 'Manuel', 1, 1, 0, 5, 110, null),
+(6, 'Manuel', 1, 1, 0, 5, 110, 'Unknown'),
 (7, 'Automatic', 1, 1, 1, 5, 170, 'Luxury'),
 (8, 'Manuel', 1, 1, 1, 5, 250, 'Sport'),
-(9, 'Automatic', 0, 1, 0, 5, 130, null),
+(9, 'Automatic', 0, 1, 0, 5, 130, 'Unknown'),
 (10, 'Manuel', 1, 1, 1, 5, 150, 'Luxury');
 
 
