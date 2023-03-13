@@ -1,0 +1,61 @@
+INSERT INTO customer (customer_fullname, customer_address, customer_city, customer_phone, customer_mobile, customer_email, customer_licence_number, customer_licence_date)
+VALUES
+('John Smith', '123 Main St', 'Anytown', '555-1234', '555-5678', 'john.smith@example.com', 123456, '2020-01-01'),
+('Jane Doe', '456 Oak St', 'Othertown', '555-5678', '555-9012', 'jane.doe@example.com', 234567, '2019-12-31'),
+('Bob Johnson', '789 Pine St', 'Smalltown', '555-9012', '555-3456', 'bob.johnson@example.com', 345678, '2020-02-15'),
+('Sarah Brown', '987 Elm St', 'Bigcity', '555-3456', '555-7890', 'sarah.brown@example.com', 456789, '2020-03-15'),
+('Mike Davis', '321 Cedar St', 'Somewhere', '555-7890', '555-1234', 'mike.davis@example.com', 567890, '2019-11-15'),
+('Emily Wilson', '654 Maple St', 'Nowhere', '555-2345', '555-6789', 'emily.wilson@example.com', 678901, '2020-01-30'),
+('Tom Lee', '987 Oak St', 'Othertown', '555-6789', '555-2345', 'tom.lee@example.com', 789012, '2020-04-01'),
+('Amy Chen', '654 Pine St', 'Smalltown', '555-2345', '555-6789', 'amy.chen@example.com', 890123, '2020-05-01'),
+('Chris Kim', '321 Cedar St', 'Somewhere', '555-6789', '555-2345', 'chris.kim@example.com', 901234, '2020-06-01'),
+('Lisa Park', '987 Elm St', 'Bigcity', '555-2345', '555-6789', 'lisa.park@example.com', 123789, '2020-07-01');
+
+
+INSERT INTO accessorie (car_id, car_geartype, car_aircondition, car_cruisecontrol, car_leatherseats, car_carseats, car_horsepower, car_type)
+VALUES
+(1, 'Automatic', 1, 1, 1, 5, 120, 'Luxury'),
+(2, 'Manuel', 1, 1, 0, 5, 200, 'Sport'),
+(3, 'Automatic', 1, 1, 1, 7, 180, 'Family'),
+(4, 'Manuel', 0, 0, 0, 4, 90, 'Unknown'),
+(5, 'Automatic', 1, 1, 1, 5, 140, 'Luxury'),
+(6, 'Manuel', 1, 1, 0, 5, 110, 'Unknown'),
+(7, 'Automatic', 1, 1, 1, 5, 170, 'Luxury'),
+(8, 'Manuel', 1, 1, 1, 5, 250, 'Sport'),
+(9, 'Automatic', 0, 1, 0, 5, 130, 'Unknown'),
+(10, 'Manuel', 1, 1, 1, 5, 150, 'Luxury');
+
+
+INSERT INTO car (car_id, car_brand, car_fueltype, car_plate, car_registration, car_miles, car_isrented)
+VALUES
+  (1, 'Toyota', 'Benzin', 'ABC1234', '2022-01-01', 10000, 0),
+  (2, 'Honda', 'Benzin', 'DEF5678', '2022-01-02', 15000, 1),
+  (3, 'Tesla', 'Electric', 'GHI9012', '2022-01-03', 5000, 0),
+  (4, 'Ford', 'Benzin', 'JKL3456', '2022-01-04', 20000, 1),
+  (5, 'BMW', 'Diesel', 'MNO7890', '2022-01-05', 8000, 0),
+  (6, 'Mercedes-Benz', 'Diesel', 'PQR1234', '2022-01-06', 12000, 0),
+  (7, 'Volkswagen', 'Hybrid', 'STU5678', '2022-01-07', 1000, 0),
+  (8, 'Audi', 'Diesel', 'VWX9012', '2022-01-08', 3000, 1),
+  (9, 'Chevrolet', 'Benzin', 'YZA3456', '2022-01-09', 18000, 0),
+  (10, 'Hyundai', 'Benzin', 'BCD7890', '2022-01-10', 7000, 0);
+  
+  
+  INSERT INTO model(car_id, car_model)
+  VALUES
+  (1, 'Camry'),
+  (2, 'Civic'),
+  (3, 'Model 3'),
+  (4, 'Mustang'),
+  (5, 'X5'),
+  (6, 'C-Class'),
+  (7, 'Golf'),
+  (8, 'A4'),
+  (9, 'Corvette'),
+  (10, 'Elantra');
+  
+  
+  INSERT INTO contract(contract_id, customer_licence_number, contract_date_from, contract_date_to, contract_max_km, contract_km_driven, car_plate)
+  VALUES
+  (2, 234567, '2023-05-03', '2023-05-05', 5000, 15000, 'DEF5678'),
+  (4, 456789, '2023-10-02', '2023-10-03', 3000, 20000, 'JKL3456'),
+  (8, 890123, '2023-01-01', '2023-01-02', 750, 3000, 'VWX9012');
